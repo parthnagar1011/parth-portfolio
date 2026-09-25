@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Parth Nagar — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="portfolio_home.css">
+</head>
+<body>
+
+<nav class="nav" id="nav">
+  <a href="#top" class="nav-mark"><span class="dot"></span>Parth Nagar</a>
+  <button class="nav-toggle" id="menuBtn">Menu +</button>
+</nav>
+
+<div class="side-menu" id="sideMenu">
+  <button class="menu-close" id="menuClose">Close &times;</button>
+  <div class="side-menu-links">
+    <a href="#top" data-n="01">Home</a>
+    <a href="#about" data-n="02">About</a>
+    <a href="#projects" data-n="03">Projects</a>
+    <a href="#experience" data-n="04">Experience</a>
+    <a href="#certs" data-n="05">Certificates</a>
+    <a href="#contact" data-n="06">Contact</a>
+  </div>
+  <div class="side-menu-foot">
+    <div class="side-menu-label mono">Socials</div>
+    <div class="side-menu-socials">
+      <a href="https://github.com/parthnagar1011" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/parth-nagar-430161273/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="mailto:parthnagar1003@gmail.com">Email</a>
+    </div>
+  </div>
+</div>
+<div class="side-menu-overlay" id="sideMenuOverlay"></div>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-pattern" aria-hidden="true"></div>
+    <div class="hero-corner tl" aria-hidden="true"></div>
+    <div class="hero-corner br" aria-hidden="true"></div>
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <div class="hero-script">Hi, I'm</div>
+        <h1 class="hero-name">Parth<br>Nagar<span class="dot-red">.</span></h1>
+        <p class="hero-role">B.Tech CSE (AI &amp; ML) Graduate — LNCT University, Bhopal</p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-solid">See the projects</a>
+          <a href="#resume" class="btn btn-outline">Download resume</a>
+        </div>
+      </div>
+      <div class="hero-photo-wrap">
+        <div class="hero-photo-ring" aria-hidden="true"></div>
+        <img class="hero-photo" src="assets/profile-photo.jpg" alt="Parth Nagar">
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about section" id="about">
+    <div class="wrap">
+      <span class="section-num mono">01 / About</span>
+      <h2 class="section-title" style="margin-bottom:10px;">The story so far.</h2>
+      <p class="section-desc" style="margin-bottom:48px;">A quick look at who I am and how I got here.</p>
+
+      <div class="intro-card">
+        <div class="intro-photo-ring"><img src="assets/profile-photo.jpg" alt="Parth Nagar"></div>
+        <div>
+          <h3 class="intro-title">Hey, I'm Parth.</h3>
+          <p class="intro-text">I'm an AI/ML engineer who enjoys building practical, real-world applications of machine learning — turning models into web apps that people can actually open and use.</p>
+        </div>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-tabs" id="tlTabs">
+          <button class="tl-tab active" data-i="0"><span class="tl-num mono">01</span>10th Grade</button>
+          <button class="tl-tab" data-i="1"><span class="tl-num mono">02</span>12th Grade</button>
+          <button class="tl-tab" data-i="2"><span class="tl-num mono">03</span>UG Degree</button>
+          <button class="tl-tab" data-i="3"><span class="tl-num mono">04</span>Hackathon</button>
+        </div>
+        <div class="timeline-panel" id="tlPanel">
+          <!-- filled by JS -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="projects" id="projects">
+    <div class="wrap section-head" style="padding-top:110px;">
+      <div>
+        <span class="section-num mono">02 / Projects</span>
+        <h2 class="section-title">Two models, two real-world jobs.</h2>
+      </div>
+      <p class="section-desc">Each one started as a research question and ended as something with a front door — an upload box, a dashboard, a report.</p>
+    </div>
+
+    <div class="stack">
+
+      <!-- Project 1 -->
+      <article class="card card--cream">
+        <div class="wrap card-inner">
+          <div>
+            <div class="card-tag mono"><span class="num">01</span>Sept 2024</div>
+            <h3>AI Crop Disease Detection</h3>
+            <p>CropCure is a web-based system that classifies crop diseases from images and suggests treatment, built to help farmers act before a problem spreads. This became the project I later carried into the Smart India Hackathon.</p>
+            <p>I trained the classification models and built the real-time analysis flow that plugs into the web app.</p>
+            <div class="tags">
+              <span class="tag">Python</span><span class="tag">Machine Learning</span><span class="tag">CNN</span><span class="tag">Computer Vision</span>
+            </div>
+            <div class="card-actions">
+              <a href="https://crop-cure-livid.vercel.app/" target="_blank" rel="noopener" class="btn btn-solid">Visit Project ↗</a>
+              <a href="https://github.com/parthnagar1011" target="_blank" rel="noopener" class="btn btn-outline">View on GitHub</a>
+            </div>
+          </div>
+          <a href="https://crop-cure-livid.vercel.app/" target="_blank" rel="noopener" class="card-visual card-visual-shot">
+            <img src="assets/project-cropcure-screenshot.jpg" alt="CropCure — live site screenshot">
+          </a>
+        </div>
+      </article>
+
+      <!-- Project 2 -->
+      <article class="card card--ink">
+        <div class="wrap card-inner">
+          <div>
+            <div class="card-tag mono"><span class="num">02</span>Jan 2025</div>
+            <h3>Deepfake Detection System — TruthLens</h3>
+            <p>TruthLens is a deep-learning model that flags manipulated media, paired with a straightforward interface so a non-technical user can upload a file and get a clear read on whether it's real.</p>
+            <p>Focused on classification accuracy first, then on making the result legible — a report, not just a probability.</p>
+            <div class="tags">
+              <span class="tag">Deep Learning</span><span class="tag">Python</span><span class="tag">Media Forensics</span>
+            </div>
+            <div class="card-actions">
+              <a href="https://deep-fake-detection-66hu.vercel.app/" target="_blank" rel="noopener" class="btn btn-solid">Visit Project ↗</a>
+              <a href="https://github.com/parthnagar1011" target="_blank" rel="noopener" class="btn btn-outline">View on GitHub</a>
+            </div>
+          </div>
+          <a href="https://deep-fake-detection-66hu.vercel.app/" target="_blank" rel="noopener" class="card-visual card-visual-shot">
+            <img src="assets/project-deepfake-screenshot.jpg" alt="TruthLens — live site screenshot">
+          </a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="experience section" id="experience">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="section-num mono">03 / Experience</span>
+          <h2 class="section-title">Where I've put this to work.</h2>
+        </div>
+      </div>
+
+      <div class="exp-row">
+        <div class="exp-date">Oct 2023</div>
+        <div>
+          <div class="exp-role">Web Development Intern</div>
+          <div class="exp-org">Prodigy InfoTech</div>
+          <p class="exp-desc">Completed a 1-month web development internship, working on real front-end tasks and finishing with outstanding remarks.</p>
+        </div>
+      </div>
+
+      <div class="exp-row">
+        <div class="exp-date">Sept — Nov 2024</div>
+        <div>
+          <div class="exp-role">Machine Learning Developer</div>
+          <div class="exp-org">Smart India Hackathon (SIH)</div>
+          <p class="exp-desc">Developed an AI-driven crop disease detection and management system as part of a team. Built and fine-tuned the machine learning models behind the classification, and collaborated with teammates to deploy the models inside a working web application.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section" style="background:var(--white);border-top:1px solid var(--sand);border-bottom:1px solid var(--sand);">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="section-num mono">04 / Skills</span>
+          <h2 class="section-title">The toolkit.</h2>
+        </div>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-cat">
+          <h4>Languages</h4>
+          <div class="skill-list"><span class="pill">Java</span><span class="pill">Python</span></div>
+        </div>
+        <div class="skill-cat">
+          <h4>ML / DL</h4>
+          <div class="skill-list"><span class="pill">Machine Learning</span><span class="pill">CNNs</span></div>
+        </div>
+        <div class="skill-cat">
+          <h4>Fundamentals</h4>
+          <div class="skill-list"><span class="pill">Data Structures</span><span class="pill">OOP</span></div>
+        </div>
+        <div class="skill-cat">
+          <h4>Working style</h4>
+          <div class="skill-list"><span class="pill">Problem Solving</span><span class="pill">Communication</span><span class="pill">Team Collaboration</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATES -->
+  <section class="certs section" id="certs">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="section-num mono">05 / Certificates</span>
+          <h2 class="section-title">Formal ground under the projects.</h2>
+        </div>
+        <p class="section-desc">Ten courses, ten certificates — scroll sideways to see them all.</p>
+      </div>
+      <div class="cert-grid">
+        <a class="cert-card" href="assets/certificate-kaggle-intro-to-programming.jpg" target="_blank" rel="noopener">
+          <span class="cert-img-wrap"><img class="cert-img" src="assets/certificate-kaggle-intro-to-programming.jpg" alt="Kaggle certificate — Intro to Programming"><span class="cert-badge">IMAGE</span></span>
+          <div class="cert-meta">
+            <div class="cert-issuer mono">KAGGLE</div>
+            <div class="cert-title">Intro to Programming</div>
+            <div class="cert-view">View full file &#8599;</div>
+          </div>
+        </a>
+        <a class="cert-card" href="assets/certificate-nptel-programming-in-java.jpg" target="_blank" rel="noopener">
+          <span class="cert-img-wrap"><img class="cert-img" src="assets/certificate-nptel-programming-in-java.jpg" alt="NPTEL certificate — Programming in Java"><span class="cert-badge">IMAGE</span></span>
+          <div class="cert-meta">
+            <div class="cert-issuer mono">NPTEL · IIT Kharagpur</div>
+            <div class="cert-title">Programming in Java</div>
+            <div class="cert-view">View full file &#8599;</div>
+          </div>
+        </a>
+        <a class="cert-card" href="assets/certificate-coursera-programming-for-everybody.jpg" target="_blank" rel="noopener">
+          <span class="cert-img-wrap"><img class="cert-img" src="assets/certificate-coursera-programming-for-everybody.jpg" alt="Coursera certificate — Programming for Everybody"><span class="cert-badge">PDF</span></span>
+          <div class="cert-meta">
+            <div class="cert-issuer mono">COURSERA · UNIVERSITY OF MICHIGAN</div>
+            <div class="cert-title">Programming for Everybody (Python)</div>
+            <div class="cert-view">View full file &#8599;</div>
+          </div>
+        </a>
+        <a class="cert-card" href="assets/certificate-coursera-intro-web-development.jpg" target="_blank" rel="noopener">
+          <span class="cert-img-wrap"><img class="cert-img" src="assets/certificate-coursera-intro-web-development.jpg" alt="Coursera certificate — Intro to Web Development"><span class="cert-badge">PDF</span></span>
+          <div class="cert-meta">
+            <div class="cert-issuer mono">COURSERA · IBM</div>
+            <div class="cert-title">Intro to Web Development (HTML, CSS, JS)</div>
+            <div class="cert-view">View full file &#8599;</div>
+          </div>
+        </a>
+        <a class="cert-card" href="assets/certificate-coursera-python-data-structures.jpg" target="_blank" rel="noopener">
+          <span class="cert-img-wrap"><img class="cert-img" src="assets/certificate-coursera-python-data-structures.jpg" alt="Coursera certificate — Python Data Structures"><span class="cert-badge">PDF</span></span>
+          <div class="cert-meta">
+            <div class="cert-issuer mono">COURSERA · UNIVERSITY OF MICHIGAN</div>
+            <div class="cert-title">Python Data Structures</div>
+            <div class="cert-view">View full file &#8599;</div>
+          </div>
+        </a>
+        <a class="cert-card" href="assets/certificate-prodigy-infotech-internship.jpg" target="_blank" rel="noopener">
+          <span class="cert-img-wrap"><img class="cert-img" src="assets/certificate-prodigy-infotech-internship.jpg" alt="Prodigy InfoTech internship certificate"><span class="cert-badge">PDF</span></span>
+          <div class="cert-meta">
+            <div class="cert-issuer mono">PRODIGY INFOTECH</div>
+            <div class="cert-title">Web Development Internship</div>
+            <div class="cert-view">View full file &#8599;</div>
+          </div>
+        </a>
+        <a class="cert-card" href="assets/certificate-samatrix-deep-learning.jpg" target="_blank" rel="noopener">
+          <span class="cert-img-wrap"><img class="cert-img" src="assets/certificate-samatrix-deep-learning.jpg" alt="Samatrix certificate — Deep Learning"><span class="cert-badge">PDF</span></span>
+          <div class="cert-meta">
+            <div class="cert-issuer mono">SAMATRIX.IO</div>
+            <div class="cert-title">Deep Learning</div>
+            <div class="cert-view">View full file &#8599;</div>
+          </div>
+        </a>
+        <a class="cert-card" href="assets/certificate-samatrix-ml-pattern-recognition.jpg" target="_blank" rel="noopener">
+          <span class="cert-img-wrap"><img class="cert-img" src="assets/certificate-samatrix-ml-pattern-recognition.jpg" alt="Samatrix certificate — Machine Learning and Pattern Recognition"><span class="cert-badge">PDF</span></span>
+          <div class="cert-meta">
+            <div class="cert-issuer mono">SAMATRIX.IO</div>
+            <div class="cert-title">Machine Learning &amp; Pattern Recognition</div>
+            <div class="cert-view">View full file &#8599;</div>
+          </div>
+        </a>
+        <a class="cert-card" href="assets/certificate-samatrix-advance-ml.jpg" target="_blank" rel="noopener">
+          <span class="cert-img-wrap"><img class="cert-img" src="assets/certificate-samatrix-advance-ml.jpg" alt="Samatrix certificate — Advance Machine Learning"><span class="cert-badge">PDF</span></span>
+          <div class="cert-meta">
+            <div class="cert-issuer mono">SAMATRIX.IO</div>
+            <div class="cert-title">Advance Machine Learning</div>
+            <div class="cert-view">View full file &#8599;</div>
+          </div>
+        </a>
+        <a class="cert-card" href="assets/certificate-samatrix-nlp.jpg" target="_blank" rel="noopener">
+          <span class="cert-img-wrap"><img class="cert-img" src="assets/certificate-samatrix-nlp.jpg" alt="Samatrix certificate — Natural Language Processing"><span class="cert-badge">PDF</span></span>
+          <div class="cert-meta">
+            <div class="cert-issuer mono">SAMATRIX.IO</div>
+            <div class="cert-title">Natural Language Processing</div>
+            <div class="cert-view">View full file &#8599;</div>
+          </div>
+        </a>
+        <a class="cert-card cert-cta" id="certModalTrigger" href="certificate.html" target="_blank" rel="noopener">
+          <span class="cert-cta-icon">&#10022;</span>
+          <span class="cert-cta-text">See All<br>Certificates</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESUME -->
+  <section class="resume section" id="resume">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="section-num mono">06 / Resume</span>
+          <h2 class="section-title">Take it with you.</h2>
+        </div>
+      </div>
+      <div class="resume-single">
+        <a class="resume-card-wide" href="assets/resume.pdf" download="Parth_Nagar_Resume.pdf">
+          <div>
+            <h3>Parth Nagar — Resume</h3>
+            <p>One-page PDF — education, projects, experience and skills. Opens to view, or saves straight to your device.</p>
+            <div class="resume-foot"><span>PDF · 1 page · Direct download</span></div>
+          </div>
+          <div class="go go-big">&#8595;</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact section" id="contact">
+    <div class="wrap contact-grid">
+      <div>
+        <span class="section-num mono">07 / Contact</span>
+        <h2 class="section-title" style="color:inherit;max-width:20ch;margin-bottom:28px;">Have a project or a role in mind?</h2>
+        <a href="mailto:parthnagar1003@gmail.com" class="contact-email">parthnagar1003@gmail.com</a>
+        <div class="social-row">
+          <a class="social-icon" href="https://github.com/parthnagar1011" target="_blank" rel="noopener" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.09 3.29 9.4 7.86 10.93.58.1.79-.25.79-.56 0-.27-.01-1.17-.02-2.12-3.2.7-3.87-1.36-3.87-1.36-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.71.08-.71 1.17.08 1.78 1.2 1.78 1.2 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.25.45-2.28 1.19-3.08-.12-.29-.52-1.46.11-3.04 0 0 .97-.31 3.18 1.18a11.05 11.05 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.58.24 2.75.12 3.04.74.8 1.19 1.83 1.19 3.08 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.07.78 2.15 0 1.55-.01 2.8-.01 3.18 0 .31.21.67.8.56A10.51 10.51 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5Z"/></svg>
+          </a>
+          <a class="social-icon" href="https://www.linkedin.com/in/parth-nagar-430161273/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45Z"/></svg>
+          </a>
+          <a class="social-icon" href="mailto:parthnagar1003@gmail.com" aria-label="Email">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 5.5h18v13H3v-13Z"/><path d="m3.5 6 8.5 7 8.5-7"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <form class="message-card" onsubmit="event.preventDefault(); window.location.href='mailto:parthnagar1003@gmail.com?subject=' + encodeURIComponent('Portfolio message from ' + (this.name.value||'')) + '&body=' + encodeURIComponent((this.message.value||'') + '\\n\\n' + (this.email.value||''));">
+        <h3>Send a message</h3>
+        <p class="msg-sub">I read everything — you'll hear back within a day or two.</p>
+        <label class="msg-field">
+          <span>Name</span>
+          <input type="text" name="name" required>
+        </label>
+        <label class="msg-field">
+          <span>Email</span>
+          <input type="email" name="email" required>
+        </label>
+        <label class="msg-field">
+          <span>Message</span>
+          <textarea name="message" rows="3" required></textarea>
+        </label>
+        <button type="submit" class="btn btn-solid msg-submit">Send message</button>
+      </form>
+    </div>
+  </section>
+
+  <section style="padding:70px 0;text-align:center;background:var(--cream);border-top:1px solid var(--sand);">
+    <div class="wrap">
+      <div style="width:34px;height:1px;background:var(--red);margin:0 auto 20px;"></div>
+      <p style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.4rem;">Thank you for stopping by.</p>
+    </div>
+  </section>
+
+</main>
+
+<div class="cert-modal-overlay" id="certModalOverlay">
+  <div class="cert-modal-panel">
+    <button class="cert-modal-close" id="certModalClose" aria-label="Close">&times;</button>
+    <div class="cert-modal-scroll">
+      <div class="modal-hero">
+        <div class="eyebrow" style="margin-bottom:10px;">CREDENTIALS</div>
+        <h2 style="margin-bottom:10px;">Certifications.</h2>
+        <p class="section-desc" style="margin-bottom:0;">Every course and certificate I've completed — click any card for a closer look.</p>
+      </div>
+      <div class="modal-filters" id="modalFilters">
+        <button class="modal-filter-btn active" data-filter="all">All</button>
+        <button class="modal-filter-btn" data-filter="IMAGE">Images</button>
+        <button class="modal-filter-btn" data-filter="PDF">PDFs</button>
+      </div>
+      <div class="modal-cert-grid" id="modalCertGrid">
+        <a class="modal-cert-card" href="assets/certificate-kaggle-intro-to-programming.jpg" target="_blank" rel="noopener" data-type="IMAGE">
+          <span class="modal-cert-img-wrap"><img class="modal-cert-img" src="assets/certificate-kaggle-intro-to-programming.jpg" alt="Kaggle certificate — Intro to Programming"><span class="cert-badge">IMAGE</span></span>
+          <div class="cert-meta">
+            <div class="cert-issuer mono">KAGGLE</div>
+            <div class="cert-title">Intro to Programming</div>
+            <div class="cert-view">View full file &#8599;</div>
+          </div>
+        </a>
+        <a class="modal-cert-card" href="assets/certificate-nptel-programming-in-java.jpg" target="_blank" rel="noopener" data-type="IMAGE">
+          <span class="modal-cert-img-wrap"><img class="modal-cert-img" src="assets/certificate-nptel-programming-in-java.jpg" alt="NPTEL certificate — Programming in Java"><span class="cert-badge">IMAGE</span></span>
+          <div class="cert-meta">
+            <div class="cert-issuer mono">NPTEL · IIT Kharagpur</div>
+            <div class="cert-title">Programming in Java</div>
+            <div class="cert-view">View full file &#8599;</div>
+          </div>
+        </a>
+        <a class="modal-cert-card" href="assets/certificate-coursera-programming-for-everybody.jpg" target="_blank" rel="noopener" data-type="PDF">
+          <span class="modal-cert-img-wrap"><img class="modal-cert-img" src="assets/certificate-coursera-programming-for-everybody.jpg" alt="Coursera certificate — Programming for Everybody"><span class="cert-badge">PDF</span></span>
+          <div class="cert-meta">
+            <div class="cert-issuer mono">COURSERA · UNIVERSITY OF MICHIGAN</div>
+            <div class="cert-title">Programming for Everybody (Python)</div>
+            <div class="cert-view">View full file &#8599;</div>
+          </div>
+        </a>
+        <a class="modal-cert-card" href="assets/certificate-coursera-intro-web-development.jpg" target="_blank" rel="noopener" data-type="PDF">
+          <span class="modal-cert-img-wrap"><img class="modal-cert-img" src="assets/certificate-coursera-intro-web-development.jpg" alt="Coursera certificate — Intro to Web Development"><span class="cert-badge">PDF</span></span>
+          <div class="cert-meta">
+            <div class="cert-issuer mono">COURSERA · IBM</div>
+            <div class="cert-title">Intro to Web Development (HTML, CSS, JS)</div>
+            <div class="cert-view">View full file &#8599;</div>
+          </div>
+        </a>
+        <a class="modal-cert-card" href="assets/certificate-coursera-python-data-structures.jpg" target="_blank" rel="noopener" data-type="PDF">
+          <span class="modal-cert-img-wrap"><img class="modal-cert-img" src="assets/certificate-coursera-python-data-structures.jpg" alt="Coursera certificate — Python Data Structures"><span class="cert-badge">PDF</span></span>
+          <div class="cert-meta">
+            <div class="cert-issuer mono">COURSERA · UNIVERSITY OF MICHIGAN</div>
+            <div class="cert-title">Python Data Structures</div>
+            <div class="cert-view">View full file &#8599;</div>
+          </div>
+        </a>
+        <a class="modal-cert-card" href="assets/certificate-prodigy-infotech-internship.jpg" target="_blank" rel="noopener" data-type="PDF">
+          <span class="modal-cert-img-wrap"><img class="modal-cert-img" src="assets/certificate-prodigy-infotech-internship.jpg" alt="Prodigy InfoTech internship certificate"><span class="cert-badge">PDF</span></span>
+          <div class="cert-meta">
+            <div class="cert-issuer mono">PRODIGY INFOTECH</div>
+            <div class="cert-title">Web Development Internship</div>
+            <div class="cert-view">View full file &#8599;</div>
+          </div>
+        </a>
+        <a class="modal-cert-card" href="assets/certificate-samatrix-deep-learning.jpg" target="_blank" rel="noopener" data-type="PDF">
+          <span class="modal-cert-img-wrap"><img class="modal-cert-img" src="assets/certificate-samatrix-deep-learning.jpg" alt="Samatrix certificate — Deep Learning"><span class="cert-badge">PDF</span></span>
+          <div class="cert-meta">
+            <div class="cert-issuer mono">SAMATRIX.IO</div>
+            <div class="cert-title">Deep Learning</div>
+            <div class="cert-view">View full file &#8599;</div>
+          </div>
+        </a>
+        <a class="modal-cert-card" href="assets/certificate-samatrix-ml-pattern-recognition.jpg" target="_blank" rel="noopener" data-type="PDF">
+          <span class="modal-cert-img-wrap"><img class="modal-cert-img" src="assets/certificate-samatrix-ml-pattern-recognition.jpg" alt="Samatrix certificate — Machine Learning and Pattern Recognition"><span class="cert-badge">PDF</span></span>
+          <div class="cert-meta">
+            <div class="cert-issuer mono">SAMATRIX.IO</div>
+            <div class="cert-title">Machine Learning &amp; Pattern Recognition</div>
+            <div class="cert-view">View full file &#8599;</div>
+          </div>
+        </a>
+        <a class="modal-cert-card" href="assets/certificate-samatrix-advance-ml.jpg" target="_blank" rel="noopener" data-type="PDF">
+          <span class="modal-cert-img-wrap"><img class="modal-cert-img" src="assets/certificate-samatrix-advance-ml.jpg" alt="Samatrix certificate — Advance Machine Learning"><span class="cert-badge">PDF</span></span>
+          <div class="cert-meta">
+            <div class="cert-issuer mono">SAMATRIX.IO</div>
+            <div class="cert-title">Advance Machine Learning</div>
+            <div class="cert-view">View full file &#8599;</div>
+          </div>
+        </a>
+        <a class="modal-cert-card" href="assets/certificate-samatrix-nlp.jpg" target="_blank" rel="noopener" data-type="PDF">
+          <span class="modal-cert-img-wrap"><img class="modal-cert-img" src="assets/certificate-samatrix-nlp.jpg" alt="Samatrix certificate — Natural Language Processing"><span class="cert-badge">PDF</span></span>
+          <div class="cert-meta">
+            <div class="cert-issuer mono">SAMATRIX.IO</div>
+            <div class="cert-title">Natural Language Processing</div>
+            <div class="cert-view">View full file &#8599;</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div>
+        <div class="avatar-mono" style="margin-bottom:22px;">PN</div>
+        <div class="footer-mark">Parth Nagar</div>
+        <p class="footer-tag">AI/ML engineer building computer-vision systems people can actually use.</p>
+      </div>
+      <div class="footer-col">
+        <h5>NAVIGATE</h5>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#certs">Certificates</a>
+      </div>
+      <div class="footer-col">
+        <h5>PROJECTS</h5>
+        <a href="#projects">Crop Disease Detection</a>
+        <a href="#projects">Deepfake Detection</a>
+      </div>
+      <div class="footer-col">
+        <h5>CONNECT</h5>
+        <a href="mailto:parthnagar1003@gmail.com">Email</a>
+        <a href="https://github.com/parthnagar1011" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/parth-nagar-430161273/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Parth Nagar. Built with intent.</span>
+      <span>Bhopal, India</span>
+    </div>
+  </div>
+</footer>
+
+<script src="portfolio_home.js"></script>
+
+</body>
+</html>
